@@ -1,0 +1,274 @@
+*{
+  font-family: 'CourierNew', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  :root{
+    --primary-color:#6C3B2A;
+    --secundary-color:#F5F5DC;
+    --hover-color:#00BFFF;
+    --background-color:#FFF;
+  
+  }
+  header, nav, .main-banner, .footer .encabezado1 {
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--background-color);
+    background-color: #0b0604;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 10px 0; 
+  }
+
+  a:hover{
+    color: hsl(184, 59%, 57%);
+    transition: color 0.3s;
+  }
+  nav a{
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 0.9em;
+  }
+  .main-banner h1 p{
+    text-align: center;
+    background-color:bisque;
+    padding: 40px 20px;
+    font-size: 2.5em;
+    margin-top: 10px;
+    color:var(--background-color);
+  }
+  
+  .slider-container img{
+  position: relative;
+          width: 100%;
+          max-width: 100%;
+          height: 450px;
+          overflow: hidden;
+          margin: auto;
+          display: block;
+          transition: transform 0.5s ease;
+          max-height: 100%;
+      }
+
+      .new-products {
+        text-align: center;
+        margin: 20px;
+    }
+    
+     /* Sección de productos */
+     table{
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 80%; /* Ajusta el ancho según lo necesites */    
+  }
+  /* Estilo para las celdas de la tabla */
+  td img{
+      text-align: center;
+      width: 25%; /* Ajusta para que todas las celdas sean del mismo tamaño */
+      height: 300px; /* Ajusta la altura de las celdas */
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      padding: 10px;
+  }
+button{
+  background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Degradado cálido y atractivo */
+  color: var(--background-color); /* Texto blanco */
+  font-family: 'Arial', sans-serif; /* Fuente clara y legible */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px; /* Bordes redondeados para suavidad */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+  position: relative;
+  overflow: hidden;
+}
+
+.h2-subtitulo, .texto-informativo{
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+  /* Footer */
+  
+  footer{
+    width: 100%;
+    max-width: 100%;
+    background-color: #ADA4A2;
+  }
+
+  :root {
+    --primary-color: #007BFF;
+    --primary-hover: #0056b3;
+    --text-color: #333;
+    --error-color: #ff4d4d;
+    --success-color: #28a745;
+    --input-background: #fff;
+    --input-border: #ccc;
+}
+
+.form-container {
+    background-color: #ccc(216, 216, 216);
+    padding: 45px;
+    border-radius: 40px;
+    box-shadow: 2px 25px 25px rgba(0, 0, 0, 0.3);
+    max-width: 550px;
+    width: 100%;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: var(--input-background);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+    border-color: var(--error-color);
+}
+
+.form-group input:valid,
+.form-group select:valid,
+.form-group textarea:valid {
+    border-color: var(--success-color);
+}
+
+.form-group small {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.85em;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+}
+
+.form-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.form-footer a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 24px;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea,
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Animación de carga para el botón de envío */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.submit-btn.loading {
+    position: relative;
+    color: transparent;
+}
+
+.submit-btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
